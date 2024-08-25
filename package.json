@@ -1,0 +1,32 @@
+{
+  "name": "my-nextjs-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-window": "^1.8.10",
+    "tailwindcss": "latest",
+    "walk-up-path": "^4.0.0",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "postcss-preset-env": "latest",
+    "jest": "latest",
+    "babel-jest": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/jest-dom": "latest"
+  }
+}

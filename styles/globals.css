@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #1d4ed8; /* Tailwind's blue-700 */
+  --secondary-color: #2563eb; /* Tailwind's blue-600 */
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen",
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Global Styles */
+html,
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  @apply bg-white shadow-lg rounded-lg p-6 max-w-4xl w-full text-center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  @apply shadow-2xl;
+  transform: scale(1.02);
+}
+
+/* Header */
+h1 {
+  @apply text-4xl font-bold text-gray-800 mb-3;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #007bff;
+}
+
+h2 {
+  @apply text-2xl text-gray-600 mb-5;
+}
+
+/* Table Styles */
+table {
+  @apply w-full border-collapse mb-5 rounded-lg overflow-hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  @apply px-3 py-4 text-left text-gray-800;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  @apply bg-blue-500 text-white;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+tr:hover {
+  @apply bg-blue-50;
+}
+
+/* Search and Buttons */
+input[type="text"], button {
+  @apply px-4 py-2 rounded border border-gray-300 text-lg;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="text"] {
+  @apply w-64;
+}
+
+button {
+  @apply bg-blue-500 text-white;
+}
+
+button:hover {
+  @apply bg-blue-600;
+}
+
+button:active {
+  @apply transform translate-y-1;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex justify-center items-center mt-4;
+}
+
+.pagination button {
+  @apply bg-white text-blue-500 border border-blue-500;
+}
+
+.pagination button:hover {
+  @apply bg-blue-500 text-white;
+}
+
+/* Footer */
+footer {
+  @apply mt-5 text-sm text-gray-600;
+}
